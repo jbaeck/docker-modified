@@ -1,3 +1,5 @@
+// based on https://github.com/bechhansen/docker-win-5543/tree/master
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -12,16 +14,6 @@ public class ModifiedTest {
     if (args.length == 1) {
       path = args[0];
     }
-
-    //    File folder = new File("/tmp/test/deployment");
-    //    folder.mkdirs();
-    //
-    //    Path path = folder.toPath();
-    //    Path file1 = path.resolve(time + "-1.txt");
-    //    Path file2 = path.resolve(time + "-2.txt");
-    //
-    //    file1 = Files.createFile(file1);
-    //    file2 = Files.createFile(file2);
 
     File srcFile = new File(path + time + "-srcFile");
     srcFile.createNewFile();
